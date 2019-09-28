@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="nome" onmouseover="teste()">Texto</h1>
+    <h2 id="idade">Texto</h2>
+</body>
+<script>
+    function teste(){
+        alert("Segue o Lider");
+    }
+    window.onload = function () {
+        var aluno = {
+            nome: "Fulano",
+            sobrenome: "da Silva",
+            idade: 22,
+            matricula: "222222",
+            nomeCompleto: function(){
+                return this.nome + " " + this.sobrenome;
+            }
+        }
+        console.log(aluno);
+        nome.innerHTML = "Nome: " + aluno.nomeCompleto();
+        idade.innerHTML = "Idade " + aluno.idade;
+    }
+</script>
+
+</html>

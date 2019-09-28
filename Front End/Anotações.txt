@@ -1,0 +1,25 @@
+Css
+
+.nomeClasse - Cria uma classe
+ex.: <h1 class="nomeClasse"
+
+#nomeId - Cria um identificador único
+ex.: <h1 id="nomeId">
+
+* - para todos os elementos.
+
+element, element - h1, p
+
+JavaScript
+
+Funções 
+
+function nomeFuncao(){
+    //colocar o texto dentro da tag com id selecionado
+    document.getElementbyId("nomeId").innerHTML = "Texto que será exibido";
+}
+
+<script src="myScript.js"></script>
+
+console.log() - Debugar o codigo pelo navegador.
+

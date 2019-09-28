@@ -1,0 +1,17 @@
+window.onload = <função>(){} - Carrega uma função toda vez que a pagina termina de ser carregada.
+
+document.getElementByID("<id>").innerHtml = <conteudo> - Modifica o conteudo dentro da tag.
+
+let <variavel> - uma variavel que irá exixter dentro de um bloco por exemplo: for, if, {}, etc.
+
+adminlte - exemplos de paginas bootstrap
+
+jquery
+
+$(<seletor>).val() -  
+
+$(<seletor>).text() - 
+
+$().each(<funcao>) - percorre uma lista e executa a função para cada item.
+
+.css("<atributo>","<valor>") - troca um valor de um atributo

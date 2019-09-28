@@ -1,0 +1,1 @@
+git@github.com:Residencia-de-Software/arquivoscurso.git

@@ -1,0 +1,10 @@
+Logica de Programação
+
+Algoritmo é um conjunto de instruções finitas para resolução de um problema.
+
+sonarqube - Teste boas praticas e falhas no algortmo.
+
+Robert Cecil Martin - clean code e the clean coder
+
+
+

@@ -1,0 +1,17 @@
+Boas Praticas
+
+Entidades 
+
+Começar com uma letra e estar no singular
+
+Sem espaços ou caracteres especias
+
+Entidade Forte - é indepemdente de outras entidades, exemplo empresa
+
+Entidade Fraca - é depende de outra entidades, exemplo dependente de um funcionario
+
+git Professora
+
+github/mmondelli/residenciasoftware_bd
+
+draw.io
