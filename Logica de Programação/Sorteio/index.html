@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <img src="img/titulo.png" class="img-fluid" alt="Sorteador">
+        <form>
+            <div class="form-group">
+                <label for="alunos">Listagem de Pessoas</label>
+                <textarea class="form-control" id="pessoa" rows="15"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="arquivoAlunos">Selecionar Arquivo</label>
+                <input type="file" class="form-control-file" id="arquivoAlunos">
+            </div>
+            <div class="form-group">
+                <label for="quantGrupos">Quantidade de Grupos</label>
+                <input type="number" class="form-control" id="quantGrupos" placeholder="Quantidade de Grupos">
+            </div>
+            <button type="button" class="btn btn-light">Sortear</button>
+        </form>
+    </div>
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+
+</html>

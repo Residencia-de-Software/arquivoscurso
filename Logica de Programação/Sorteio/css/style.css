@@ -1,0 +1,14 @@
+#container{
+    border-radius: 10px;
+    width: 400px;
+    height: 100%;
+    box-align: center;
+    padding: 15px;
+    background-color: silver;
+}
+
+body{
+    background-color: white;
+    align-self: center;
+    border: 15px;
+}

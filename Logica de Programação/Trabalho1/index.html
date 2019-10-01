@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcula Quantidade de Moedas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div id="valores">
+        <h1>Calcula Quantidade de Moedas</h1>
+        <input class="form-control form-control-lg" type="number" placeholder="Digite o Valor" id="valor">
+        <button type="button" class="btn btn-dark" id="calcular" onclick="calcular()">Calcular</button>
+    </div>
+    <div id="moedas">
+        <div class="form-group form-check">
+            <label class="form-check-label">Notas de 100: </label>
+            <input class="form-control" type="text" placeholder="" readonly id="nota100">
+        </div>
+        <div class="form-group form-check">
+            <label class="form-check-label">Notas de 50: </label>
+            <input class="form-control" type="text" placeholder="" readonly id="nota50">
+        </div>
+        <div class="form-group form-check">
+            <label class="form-check-label">Notas de 10: </label>
+            <input class="form-control" type="text" placeholder="" readonly id="nota10">
+        </div>
+        <div class="form-group form-check">
+            <label class="form-check-label">Notas de 5: </label>
+            <input class="form-control" type="text" placeholder="" readonly id="nota5">
+        </div>
+        <div class="form-group form-check">
+            <label class="form-check-label">Notas de 1: </label>
+            <input class="form-control" type="text" placeholder="" readonly id="nota1">
+        </div>
+
+    </div>
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+
+</html>

@@ -1,0 +1,28 @@
+body{
+    background-color: #FF814A!important;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#valores{
+    color: #24A6FF;
+    background-color :#303EFF;
+    width: auto;
+    padding: 30px 15px 30px 15px;
+    box-shadow: 5px 5px 5px #0C1040;
+    border-radius: 15px;
+}
+
+#moedas{
+    background-color: #8C24FF;
+    padding: 20px;
+    margin: 30px 20px 30px 20px;
+    box-shadow: 5px 5px 5px #0C1040;
+    border-radius: 15px;
+}
+
+#calcular{
+    margin-top: 20px;
+}
