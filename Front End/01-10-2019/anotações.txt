@@ -1,0 +1,21 @@
+sort(myfuncrion) - Ordenar uma lista
+
+map(myfunction) - executa uma ação em todos os elementos de um array
+
+filter(myfunction);
+
+reduce(myfunction);
+
+var d = new Date(); // d recebe a data atual
+
+myArray.forEach(myFunction(value));
+
+Fazer os exercicios do freeCodeCamp seção javascript até a ante-penultima seção.
+
+Para não atualiza a pagina com o submit do form utilize: preventDefault
+
+json.stringfy(json) - mostra o arquivo json como string;
+
+json - JavaScript Object Notation.
+
+https://drive.google.com/folderview?id=1iVGf-8tsBLIZlTQI8OTgID197noi1PkE

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form onsubmit="adiciona()">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input class="form-control" type="text" id="nome" name="nome">
+            </div>
+            <div class="form-group">
+                <label for="nota">Nota:</label>
+                <input class="form-control" type="number" id="nota" name="nota">
+            </div>
+            <button id="submit-btn" type="submit" class="btn btn-primary">Add</button>
+        </form>
+
+        <div id="lista">
+        </div>
+    </div>
+    <script>
+        var itens = [];
+        var cont = 0;
+
+        function remove(pos) {
+            document.getElementById("obj" + pos).remove();
+        }
+        window.onload = function () {
+            document.getElementById("submit-btn").addEventListener("click", function (event) {
+                adiciona(event);
+            });
+        }
+        function adiciona(event) {
+            itens.push({
+                name: nome.value,
+                note: nota.value
+            });
+            lista.innerHTML = "";
+
+            itens.sort((a, b) => {
+                return b.note - a.note;
+            });
+
+            itens.forEach(function (value) {
+                lista.innerHTML += "<div id='obj" + cont + "' >"
+                    + "<p>" + value.name
+                    + "(" + value.note + ")"
+                    + "<button class='btn btn-danger'"
+                    + "onclick='remove(" + cont + ")'"
+                    + ">Remove</button></p>"
+                    + "</div>";
+                cont++;
+            });
+            nome.value = "";
+            nota.value = "";
+
+            event.preventDefault();
+            console.log(JSON.stringify(itens));
+        }
+
+    </script>
+</body>
+
+</html>
