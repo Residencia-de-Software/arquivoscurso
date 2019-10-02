@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <title>Soma</title>
+</head>
+
+<body>
+    <div id="corpo">
+        <form>
+            <p>Primeiro Número: <input type="number" name="num1" id="txtNum1"></p>
+            <p>Segundo Número: <input type="number" name="num1" id="txtNum2"></p>
+            <p><input type="button" value="somar" id="btnSomar"></p>
+        </form>
+    </div>
+
+</body>
+<script>
+    $(() => {
+        $("#btnSomar").click(
+            () => {
+                soma = Number($("#txtNum1").val()) + Number($("#txtNum2").val());
+                $("#corpo").append("<p>" + soma + "</p>");
+            }
+        )
+    }
+    )
+
+
+</script>
+
+</html>

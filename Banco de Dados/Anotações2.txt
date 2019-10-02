@@ -1,0 +1,22 @@
+insert into nomeTabela(campo1,campo2,...) values (valor1,valor2,...)
+
+delete from nomeTabela where campo = valorDoCampo
+
+update nomeTabela set campo1 = novoValor1 , campo2 = novoValor2 where campo = valorDoCampo
+
+create view nomeView as select ...
+
+select (campo1,campo2,...) from nomeTabela where nomeCampo like valorCampo
+
+insert into artista_genero (id_artista,id_genero) values ((select id from artista where nome like '%titas%'),(select id from genero where nome like 'rock'))
+
+insert into artista_genero (id_artista,id_genero) VALUES(
+(SELECT id from artista where  nome like 'Roberto Carlos'),
+(SELECT id from genero where nome like 'MPB')
+)
+
+limite 100
+
+pragma foreign key = true;
+
+URI online judge - Treinar banco de dados.

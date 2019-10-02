@@ -1,0 +1,23 @@
+$(seletor).action();
+$().hide(); - esconde o elemento
+$().show(); - mostra o elemento
+$(function()) - So executa a função apenas depois de todas as paginas carregadas.
+$().fadeOut() - 
+$().fadeIn() - 
+$().fadeToogle() - Aparece quando oculto, some quando visivel.
+$().slideUp() - 
+$().slideDown() - 
+$().slideToogle() - 
+$().animate(css) - alterna o css do elemento.
+$().toogle() - 
+$().stop() - para a animação, fadeIn, fadeOut, etc.
+$().text() - pega o textio dentro da tag
+$().html() - pega o html 
+$().val() - pega o valor do input
+$().attr('atributo')
+$().append() - adiciona elementos
+$().remove() - 
+$().addClass()
+$().removeClas() - 
+$().css(propriedade) - 
+$().css(propriedade,valor) - altera o valor
