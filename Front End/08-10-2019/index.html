@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="nome">Digite o Nome: </label>
+            <input type="text" id="nome" placeholder="Seu nome aqui.">
+        </div>
+        <div>
+            <label for="email">Digite o Emial: </label>
+            <input type="text" id="email" placeholder="Seu email aqui.">
+        </div>
+        <div>
+            <label for="senha">Digite a Senha: </label>
+            <input type="password" id="senha" placeholder="Sua senha aqui.">
+        </div>
+        <div>
+            <button id="cadastrar">Cadastrar</button>
+        </div>
+    </form>
+    <div id="listaPessoas">
+
+    </div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $(() => {
+        $("#cadastrar").click(() => {
+            if (typeof (Storage) !== undefined) {
+                let novaPessoa = {
+                    "nome": $("#nome").val(),
+                    "email": $("#email").val(),
+                    "senha": $("#senha").val()
+                }
+                var lista = [];
+                if (localStorage.hasOwnProperty("cadPessoa")) {
+                    lista = JSON.parse(localStorage.getItem("cadPessoa"));
+                }
+                lista.push(novaPessoa);
+                localStorage.setItem("cadPessoa", JSON.stringify(lista));
+                console.log(lista);
+            }
+        })
+    })
+</script>
+
+</html>
