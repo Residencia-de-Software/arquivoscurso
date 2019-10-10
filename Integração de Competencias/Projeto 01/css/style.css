@@ -1,0 +1,79 @@
+body{
+    background-color: lightgray;
+    margin: 15px;
+}
+#main{
+    display: flex;
+}
+#perfil{
+    float: left;
+    margin-right: 15px;
+    width: 35%;
+}
+#mainPerfil{
+    background-color: white;
+    text-align: center; 
+    padding: 15px;
+    border-radius: 10px; 
+}
+#mainPerfil button{
+    background-color: brown;
+    color: aliceblue;
+    width: 200px;
+    height: 25px;
+    border: none;
+}
+#mainPerfil p{
+    text-align: justify;
+}
+#mainPerfil img{
+    border-radius: 100%;
+}
+#rodapePerfil{
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    border-radius: 10px; 
+}
+#rodapePerfil figure{
+    margin: auto;
+}
+#filmes{
+    float: right;
+    background-color: white;
+    padding: 15px;
+    display: grid;
+    width: 65%;
+    border-radius: 10px 10px 0px 0px;
+}
+#listaFilme img{
+    float: left;
+    padding: 10px;
+}
+
+footer{
+    background-color: white;
+    padding: 15px;
+    align-content: center;
+    display: flex;
+    border-radius: 10px 0px 10px 10px; 
+}
+img{
+    align-content: center;
+}
+#sobreRodape{
+    width: 65%;
+    float: left;
+}
+#linkRodape{
+    width: 35%;
+    float: right;
+    text-align: right;
+    position: relative;
+    vertical-align: middle;
+}
+#linkRodape img{
+    margin: 15px;
+}
