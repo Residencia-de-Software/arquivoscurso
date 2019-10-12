@@ -1,23 +1,145 @@
-.sacola{
-    background-image: url('../img/sacola.png');
+.sacola {
+    background-image: url(../img/sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
-
     font-size: 14px;
     padding-right: 35px;
     text-align: right;
     width: 140px;
 }
-
-.menu-opcoes ul{
+    
+.menu-opcoes ul {
     font-size: 15px;
 }
-
-.menu-opcoes a{
+    
+.menu-opcoes a {
     color: #003366;
 }
-
-body{
+    
+body {
     color: #333333;
-    font-family: "Lucida Sans Unicode","Lucida Grande",sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+        
+ul li {
+    display: inline;
+}
+        
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+            
+.sacola {
+    padding-top: 8px;
+}
+            
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+                
+header {
+    position: relative;
+}
+                    
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.busca,
+    .menu-departamentos {
+        background-color: #DCDCDC;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-right: 10px;
+        width: 230px;
+}
+
+.busca h2,
+    .busca form,
+        .menu-departamentos h2 {
+margin: 10px;
+}
+
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
+.busca input[type=search] {
+    width: 170px;
+}
+
+.busca,
+    .menu-departamentos {
+        float: left;
+}
+.menu-departamentos {
+    clear: left;
+}
+.destaque {
+    margin-top: 10px;
+}
+
+.menu-departamentos {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+}
+
+.novidades {
+    float: left;
+}
+
+.mais-vendidos {
+    float: right;
+}
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+            
+.novidades {
+    background-color: #F5DCDC;
+}
+            
+.mais-vendidos {
+    background-color: #DCDCF5;
 }

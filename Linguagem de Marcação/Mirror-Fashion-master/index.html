@@ -1,12 +1,19 @@
 <!Doctype html>
 <html lang="pt-br">
+
 <head>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   <title>Mirror Fashion</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/estilos.css">
+
 </head>
+
 <body>
-  <header>
+  <header class="container">
     <h1><img src="img/logo.png" alt="Logo da Mirror Fashion"></h1>
     <p class="sacola">
       Nenhum item na sacola de compras
@@ -21,6 +28,64 @@
       </ul>
     </nav>
   </header>
+  <div class="container destaque">
+    <section class="busca">
+      <h2>Busca</h2>
+      <form>
+        <input type="search">
+        <button>Buscar</button>
+      </form>
+    </section>
+    <!-- fim .busca -->
+    <section class="menu-departamentos">
+      <h2>Departamentos</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Blusas e Camisas</a></li>
+          <li><a href="#">Calças</a></li>
+          <li><a href="#">Saias</a></li>
+          <li><a href="#">Vestidos</a></li>
+          <li><a href="#">Sapatos</a></li>
+          <li><a href="#">Bolsas e Carteiras</a></li>
+          <li><a href="#">Acessórios</a></li>
+        </ul>
+      </nav>
+    </section>
+    <!-- fim .menu-departamentos -->
+    <section class="banner-destaque">
+      <figure>
+        <img src="img/destaque-home.png" alt="Promoção: Big City Night">
+      </figure>
+    </section>
+    <!-- fim .banner-destaque -->
+  </div>
+  <!-- fim .container .destaque -->
+  <div class="container paineis">
+    <!-- os paineis de novidades e mais vendidos entrarão aqui dentro -->
+    <section class="painel novidades">
+      <h2>Novidades</h2>
+      <ol>
+        <!-- primeiro produto -->
+        <li>
+          <a href="produto.html">
+            <figure>
+              <img src="img/produtos/miniatura1.png" alt="miniatura1">
+              <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+            </figure>
+          </a>
+        </li>
+        <!-- fim do primeiro produto -->
+        <!-- coloque mais produtos aqui! -->
+      </ol>
+    </section>
+  </div>
+  <section class="painel mais-vendidos">
+    <h2>Mais Vendidos</h2>
+    <ol>
+      <!-- coloque vários produtos aqui -->
+    </ol>
+  </section>
+  <!-- fim .container .paineis -->
 </body>
 
 </html>

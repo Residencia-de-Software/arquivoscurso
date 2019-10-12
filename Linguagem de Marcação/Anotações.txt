@@ -1,15 +1,15 @@
-Cabeçalho  - Logo, menus, area de login.
+Cabeçalho - Logo, menus, area de login.
 Deve aparecer em todas as paginas.
 Deve ter tamanho fixo.
 
-Rodapé - Logo, links para redes sociais. 
+Rodapé - Logo, links para redes sociais.
 Fundo normalmente cobre a largura da pagina toda.
 Icones menores e seguem a estrutura de leitura.
 tamanho fixo e aparecer em todas paginas.
 
-Área Central - Informações difetentes 
-Divisão em dois blocos 
-Bloco Principal 
+Área Central - Informações difetentes
+Divisão em dois blocos
+Bloco Principal
 Bloco Final
 
 Estrutura de HTML semantico
@@ -31,6 +31,60 @@ Estrutura de HTML semantico
 
 <nav> Lista de Links, serve que os motores de busca possam encontrar o conteudo da lista.
 
-Colocar uma imagem no H1 faz com que a imagem tenha relevancia para os motores de busca.
+    Colocar uma imagem no H1 faz com que a imagem tenha relevancia para os motores de busca.
 
-Você pode utilizar mais de uma classe exixtente em um arquivo css num mesmo elemento do html, basta separar os nomes das classes por um espaço.
+    Você pode utilizar mais de uma classe exixtente em um arquivo css num mesmo elemento do html, basta separar os nomes
+    das classes por um espaço.
+
+    Css reset - É uma forma de padronizar algumas configurações que podem variar em navegadores diferentes.
+
+    Alguns Css reset: HTML5 Boilerplate, YUI3 CSS reset, Eric Meyer CSS Reset.
+
+    https://meyerweb.com/eric/tools/css/reset/reset.css
+
+    Block Vs. Inline
+
+    Pesquisar em relação a display block e inline.
+
+    Position
+
+    Static: Padrão, é estatico de acordo o com a sequencia do html. As propriedadas top, left, etc, são ignoradas.
+
+    Relative: Usem as coordenadas relativas a posição do elemento. As coordendas são definidas por top, left, etc.
+
+    Absolute: Leva em consideração as coordenadas em relação ao elemento pai caso o pai não seja Static, caso o Pai seja
+    Static leva em considerção o proximo nivel de hierarquia.
+
+    Fixed: Vai ficar sempre em um posição fixa dentro do navegador, independente da bara de rolagem.
+
+    html5shiv - Para compatibilidade com ie anteriores ao 8 
+
+    link: https://github.com/afarkas/html5shiv
+
+    Para utilizar basta colocar
+
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    Clear - Faz com que o o elemento deixe de seguir o fluxo de uma elemento com float.
+
+    Pesquesar sobre Clear.
+
+    inherit - busca os valores do elemento pai.
+    
+    ex.:
+
+    <div id="pai">
+        <img id="filho">
+    </div>
+
+    #pai{
+        width: 100px;
+    }
+    #filho{
+        width: inherit;
+    }
+
+    
