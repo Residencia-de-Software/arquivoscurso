@@ -87,4 +87,16 @@ Estrutura de HTML semantico
         width: inherit;
     }
 
-    
+    Seletores Avançados
+
+    input[value]{} - Contem o atributo value.
+
+    div[class="menu"]{} - Seja igual a "menu" 
+
+    input[value~="problema"]{} - Contem a palavra "problema" mas apenas na string inteira
+
+    input[name^="usuario"]{} - Incie com "usuario"
+
+    input[name$="teste"]{} - Termine com "teste"
+
+    input[name*="tela"] - Contem a palavra "problema"

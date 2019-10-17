@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" name="cep" id="cep">
+    <button id="buscar">Buscar Cep</button>
+    <div id="resultado">Rodolfo</div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $(() => {
+        $("#buscar").click(() => {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = () => {
+                if (this.readyState == 4 && this.status == 200) {
+                    var resposta = JSON.parse(this.responseText);
+                    $("#resulatdo").text(resposta.logradouro);
+                }
+            }
+            xhttp.open("GET","https://viacep.com.br/ws/01001000/json/");
+            xhttp.send();
+        })
+        
+
+    })
+</script>
+
+</html>
