@@ -30,7 +30,11 @@ git mv "<origem> "<destino>"- renomear um arquivo.
 
 o arquivo .gitignore possui os arquivos que serão ignorados, podemos utilizar corigas como *, [], etc; ou diretamente o nome do arquivo.
 
+git remote add origin "<url_git>" - Adicionar um diretorio remoto
 
+git pull origin master - Puxar os arquivos o servidor remoto.
+
+git push origin master - Enviar arquivos ao servidor remoto.
 
 
 

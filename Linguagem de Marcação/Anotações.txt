@@ -63,7 +63,6 @@ Estrutura de HTML semantico
 
     Para utilizar basta colocar
 
-
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -100,3 +99,81 @@ Estrutura de HTML semantico
     input[name$="teste"]{} - Termine com "teste"
 
     input[name*="tela"] - Contem a palavra "problema"
+
+    h2~p{} - p que foram precedidos por algum h2;
+
+    h2+p{} - é um p irmão do h2 mas que aparece logo na sequência;
+
+    article>h1 {} - seletor de filho direto.
+
+    p:not(.especial){} - Todos os paragrafos com exceção da classe especial serão alterados.
+
+    Pseudo-Classes (:)
+
+    li:first-child {} - Modifica o primeiro filho. 
+        
+    li:last-child {} - Modifica o ultimo filho.
+
+    li:nth-child(3) {} - Modifica o terceiro elemento filho
+
+    É possivel utilizar expressões aritmeticas
+
+    Ex.:
+
+    li:nth-child(2n) {} - Modifica elementos pares
+
+    li:nth-child(2n+1) {} - Modifica elementos impares
+
+    Pseudo Classes de Estado
+
+    a:hover {} - seleciona o link no exato momento em que passamos o mouse por cima dele
+    
+    a:link {} - seleciona todas as âncoras que têm o atributo "href", ou seja, links
+
+    a:visited {} - seleciona todos os links cujo valor de "href" é um endereço já visitado
+
+    a:active {} - seleciona o link no exato momento em que clicamos nele
+
+    Pseudo Elementos (::)
+
+    p::first-letter {} - Altera a primeira letra dos paragrafos.
+
+    p::first-line {} - Alterar a primeira linha de todos os paragrafos.
+
+    Coloca um '[' antes de todos os elementos a
+
+    a:before {
+        content: '[ ';
+    }
+    
+    Coloca um ']' depois de todos os elementos a
+
+    a:after {
+        content: ' ]';
+    }
+
+    Pega todos os elementos <a> que começam com http:// e coloca a palavra (externo) depois.
+
+    a[href^=http://]:after {.
+        content: ' (externo)';
+    }
+
+    Prefixos
+
+    Android: -webkit-*
+    Chrome: -webkit-*
+    Firefox: -moz-*
+    Internet Explorer: -ms-*
+    iOS: -webkit-*
+    Opera: -o-*
+    Safari: -webkit-*
+
+    Verifica a compatibilidade dos navegadores
+
+    https://caniuse.com/
+
+    Gradients
+
+    
+
+    http://www.colorzilla.com/gradient-editor/
