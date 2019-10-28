@@ -45,3 +45,25 @@ function loadData() {
   }
 
   Postman - Extensão do Chrome para testar apis.
+
+  Expressões Regulares: 
+
+  /texto/ - Encontra o texto entre as barras
+
+  /texto|texto1/ - Operador ou
+
+  let expressao.test(string) - Testa se a expressao esta dentro da string
+
+  /texto/i - ignora letras maiusculas
+
+  let string.match(expressao) - busca e copia a expressao na string
+
+  /texto/g - busca todas as ocorrencias da expressao
+
+  /.exto/ - caracter coringa encontrara texto, nexto, sexto, etc.
+
+  /text[aio]/ - vai procurar texta, texti ou texto.
+
+  /t[a-i]xto/ - vai encontrar taxto, texto, tixto.
+
+  /[a-u1-5]/ - vai encontrar as sequencias a1,b1,a3,b4,etc

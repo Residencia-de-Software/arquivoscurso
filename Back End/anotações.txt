@@ -1,0 +1,37 @@
+Rest - Regras especigicas para criação de aplicações
+
+RestFull - Aplicações criadas utilizando a metodologia REST
+
+URI(Uniforme Resource Identifier) - Identificador de Recursos do Rest
+
+MVC - Model, View, Controller
+
+MVR - Model, View-Routes.
+
+Chrome v8 - Responsavel pela interpretação dos Codigos JS
+
+npm install - Instala pacotes do node
+
+npm remove  - Desinstala pacotes
+
+expressjs - Modulo para desenvolver apis em larga escala, é Não Opinativo.
+
+Frameworks Opinativos - são aqueles com opiniões sobre o "caminho certo" para lidar com qualquer tarefa específica.
+
+Frameworks Não Opinativos - têm muito menos restrições sobre a melhor maneira de utilizar componentes juntos para atingir um objetivo.
+
+Manifest - fornece informações sobre uma aplicação (como nome, autor, icone, e descrição) em um arquivo de texto
+
+Package.json
+
+Pacotes middleware - fica entre a requesição http e a resposta final. Tem pedido, resposta e callback.
+
+exports.area = function (){} - 
+
+Manipulação de Rotas - 
+
+ORM - Mapeamento objeto-relacional, manipular banco de dados sem a necessidade de utilizar SQL.
+
+
+
+
