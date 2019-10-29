@@ -22,7 +22,7 @@ Frameworks Não Opinativos - têm muito menos restrições sobre a melhor maneir
 
 Manifest - fornece informações sobre uma aplicação (como nome, autor, icone, e descrição) em um arquivo de texto
 
-Package.json
+Package.json - Arquivos com as dependencias.
 
 Pacotes middleware - fica entre a requesição http e a resposta final. Tem pedido, resposta e callback.
 
@@ -32,6 +32,30 @@ Manipulação de Rotas -
 
 ORM - Mapeamento objeto-relacional, manipular banco de dados sem a necessidade de utilizar SQL.
 
+npm init -y - Inicia um diretorio node, o parametro -y suprime as perguntas
 
+npm install express - Instalar o expressjs
 
+const express = require('express') - importa o mudulo; 
+const app = express() - Instanciando app.
+app.listen('3001') - 
 
+app.get('/',(req,res)=>{
+    res.send('Olá mundo!');
+});
+
+req - Requisição do ao servidor;
+
+res - Resposta a servidor;
+
+nodemon - executa os script sem a necessidad de reiniciar a cada alteração
+
+node install -D - o parametro -D instala apenas o pacote apenas para o desenvolvimento.
+
+devDependencies - dependencias de Desenvolvimento.
+
+Script do Package.js - cria scripts a serem executados no node.
+
+ex.: 
+
+dev: nodemon server.js - para executar digite no terminal npm run dev
