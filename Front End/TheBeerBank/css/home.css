@@ -1,0 +1,29 @@
+header{
+    background-color: orange;
+    color: white;
+    padding-top: 50px;
+}
+header ul{
+    background-color: orange;
+}
+header a:link{
+    color: white;    
+}
+
+#card .card-img-top{
+    object-fit: scale-down;
+    height: 200px;
+    padding: 20px;
+}
+
+.card{
+    box-shadow: 0px 0px 10px 1px #888888;
+}
+.card:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+#page{
+    margin-top: 15px;
+}

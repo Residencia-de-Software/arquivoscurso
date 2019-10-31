@@ -59,3 +59,31 @@ Script do Package.js - cria scripts a serem executados no node.
 ex.: 
 
 dev: nodemon server.js - para executar digite no terminal npm run dev
+
+MongoDB - Orientado a documentos.
+
+mongoose - é um ORM dde bancos não relacionais com MongoDB
+
+Intalação do MongoDB pelo Docker: 
+
+Baixar a imagem mongo 
+
+$docker pull mongo
+
+subir a imagem
+
+$docker run --name mongodb -p 27017:27017 -d mongo
+
+-name -  nome do container
+-p - define as portas a serem usadas no docker e na sua maquina, a primeira é a porta local, a segunda é 
+-d - apartir de qual imagem criara o container
+
+iniciar o containner
+
+$docker start mongodb
+
+const mongose = require('mongoose');
+
+mongose.connect('mongodb://<host>:<port>/<db>',{useUnifiedTopology:true,useNewUrlParser:true});
+
+insomnia - Baixar
