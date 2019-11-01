@@ -86,4 +86,15 @@ const mongose = require('mongoose');
 
 mongose.connect('mongodb://<host>:<port>/<db>',{useUnifiedTopology:true,useNewUrlParser:true});
 
-insomnia - Baixar
+insomnia - 
+
+
+-src
+  -models
+    product.js
+
+schema
+
+npm install require-dir
+
+require-dir - Carrega todos os modulos que estão em um diretorio.

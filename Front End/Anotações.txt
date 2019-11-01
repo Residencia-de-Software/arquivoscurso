@@ -67,3 +67,11 @@ function loadData() {
   /t[a-i]xto/ - vai encontrar taxto, texto, tixto.
 
   /[a-u1-5]/ - vai encontrar as sequencias a1,b1,a3,b4,etc
+
+localStorage.setItem(nome, valor): esta função é utilizada para armazenar um valor no local storage. Cada objeto gravado é referenciado por uma chave (nome).
+
+localStorage.getItem(nome): por sua vez, o getItem é usado para recuperar um valor armazenado a partir da sua chave identificadora.
+
+JSON.stringfy(objeto): para armazenar os dados, utilizaremos o formato JSON e esta função transforma um objeto em string com sintaxe adequado ao JSON.
+
+JSON.parse(objeto): já a função parse transforma um item no formato JSON no seu formato original.
