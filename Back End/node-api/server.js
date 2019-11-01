@@ -3,19 +3,14 @@ const express = require('express');
 const requireDir = require('require-dir');
 const app = express();
 
+//Conecta ao banco mongo
 mongoose.connect('mongodb://localhost:27017/nodeapi', { useUnifiedTopology: true, useNewUrlParser: true });
 
+//importa os modelos criados
 requireDir('./src/models');
 
-const Product = mongoose.model('Product');
+//Altera o a rota para /api
+app.use('/api',require('./src/routes'));
 
-app.get('/',(req,res)=>{
-    Product.create({
-        title:'Android',
-        description: 'Celular',
-        url: 'https://scdn.slashgear.com/wp-content/uploads/2019/08/androidlogo_2019_transparent_white_png.jpg'
-    });
-    return res.send("Pagina inical node.api!");
-})
-
+//monitora a porta 3001
 app.listen('3001');

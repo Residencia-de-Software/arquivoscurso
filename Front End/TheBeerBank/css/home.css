@@ -7,7 +7,18 @@ header ul{
     background-color: orange;
 }
 header a:link{
-    color: white;    
+    color: white;
+    transition: 0.5s;    
+}
+
+header a:visited{
+    color: white;
+    transition: 0.5s;
+}
+
+header a:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 
 #card .card-img-top{
