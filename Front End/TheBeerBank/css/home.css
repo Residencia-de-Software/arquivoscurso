@@ -39,3 +39,12 @@ header a:hover{
 #page{
     margin-top: 15px;
 }
+
+#modal-img{
+    object-fit: scale-down;
+    max-height: 500px;
+}
+
+#modal-name{
+    color:orange;
+}

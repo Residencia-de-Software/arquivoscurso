@@ -14,7 +14,7 @@ $(() => {
                 }
 
                 /*
-            
+                Muda icone de favorito
                 */
                 let favoriteIcon = '../img/favorite_not.png';
                 if (isFavorite(element.id)) {
@@ -27,8 +27,8 @@ $(() => {
                     "<div class='card h-100' id=' " + element.id + "'>" +
                     "<div class='card-header text-right'>" +
                     "<img class='img-fluid' src=" + favoriteIcon + ">" +
-                    "</div>" +
-                    "<a href='#' data-toggle='modal' data-target='#product'>"+ 
+                    "</div>" + 
+                    `<a href='#' class='link-modal' data-toggle='modal' onclick="openModal('${imagem}','${element.name}','${element.tagline}','${element.food_pairing}','${element.description}')" data-target='#product'>` + 
                     "<img class='card-img-top' src='" + imagem + "' alt=''></a>" +
                     "<div class='card-body text-center'>" +
                     "<h3 class='card-title text-warning'>" + element.name + "</h5>" +
@@ -57,27 +57,29 @@ $(() => {
             /*
             
             */
-            $(".card a").click((event) => {
-                console.log($(event.target));
-            })
+            //$(".card a").click((event) => {
+             //   console.log($(event.target));
+            //})
         }
     }
 
     //verifica se é favorito
     function isFavorite(id) {
-        return favorite.id.find((element) => id == element)
+        return favorite.id.find(
+            (element) => id == element
+        )
     }
 
     //adiciona item aos favoritos
     function addFavorite(id) {
         favorite.id.push(id);
-        localStorage.setItem('favorite',JSON.stringify(favorite));
+        localStorage.setItem('favorite', JSON.stringify(favorite));
     }
 
     //Remove item dos favoritos
     function rmFavorite(id) {
         favorite.id.splice(favorite.id.indexOf(id), 1)
-        localStorage.setItem('favorite',JSON.stringify(favorite));
+        localStorage.setItem('favorite', JSON.stringify(favorite));
     }
 
     /*
@@ -132,3 +134,18 @@ $(() => {
         document.location.reload(true);
     })
 })
+
+/*
+Função para preencher o modal 
+*/
+function openModal(imagem,name,tagline,served,features) {
+    $("#modal-name").text(name);
+    $("#modal-features").text(features);
+    $("#modal-tagline").text(tagline);
+    $("#modal-img").attr("src",imagem);
+    $("#modal-served").empty();
+    var serveds = served.split(',');
+    serveds.forEach((element)=>{
+        $("#modal-served").append($("<li>").append(element));
+    })
+}

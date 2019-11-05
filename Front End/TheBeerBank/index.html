@@ -74,27 +74,60 @@
         Abrir modal de demonstração
     </button> -->
 
-    <!-- Modal -->
+    <!-- Inicio Modal -->
     <div class="modal fade" id="product" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
+
+                <!-- Corpo modal -->
                 <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                    <div class="container-fluid">
+
+                        <!-- -->
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="img-fluid h-100" alt="Image Modal" id="modal-img">
+                            </div>
+                            <div class="col-8">
+                                <h3 id="modal-name">Titulo</h3>
+                                <h5 id="modal-tagline">TagLine</h4>
+                                <p id="modal-features"></p>
+                                <p id="modal-description"></p>
+                                <p>
+                                    <strong>Best served width: </strong>
+                                </p>
+                                <ul id="modal-served">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- -->
+                    <div class="row">
+                        <h4>You migth also like: </h4>
+                    </div>
+
+                    <!-- Decks Modal -->
+                    <div class="row">
+                        <div class="col">
+                            
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <!-- Fim Modal -->
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.js"></script>
