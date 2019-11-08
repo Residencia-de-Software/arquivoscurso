@@ -42,9 +42,18 @@ header a:hover{
 
 #modal-img{
     object-fit: scale-down;
-    max-height: 500px;
+    max-height: 350px;
 }
 
 #modal-name{
     color:orange;
+}
+
+.card-img-top{
+    align-items: center;
+}
+
+#modal-card img{
+    max-height: 150px;
+    width: auto;
 }

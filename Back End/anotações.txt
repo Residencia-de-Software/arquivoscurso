@@ -98,3 +98,7 @@ schema
 npm install require-dir
 
 require-dir - Carrega todos os modulos que estão em um diretorio.
+
+moongose-paginate - Cria a paginação das respostas
+
+cors - Cross-Origin Resource Sharing (Compartilhamento de recursos com origens diferentes).
