@@ -1,0 +1,11 @@
+docker pull mysql
+
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:8.0.18
+
+CREATE USER 'usuario'@'%' IDENTIFIED BY '123456';
+
+GRANT DELETE, INSERT, SELECT, UPDATE ON *.* TO 'usuario'@'%';
+
+ALTER USER 'usuario'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+
+FLUSH PRIVILEGES;
