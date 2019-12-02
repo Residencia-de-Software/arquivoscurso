@@ -1,0 +1,42 @@
+Transpiladores - Faz a tradução dos recursos mais atuais do javascript para navegadores antigos. Babel é o mais comum.
+
+Default parameters - Define para
+
+y = y | 1
+
+é equivalente a :
+
+if(y!=null){
+    y=1
+}
+
+return x * y;
+
+ou 
+
+function(x,y=1){
+    return x * y;
+}
+
+Rest parameters - 
+
+function(...number){
+    numbers.foreach(number)=>{
+        ...
+    }
+    return result
+}
+
+Diferenças arrow function e functions declaradas
+
+A arrow function tem excopo lexico, isso empacta no this da arrow function pois ele não possui
+ um this proprio enquanto utilizar função declarada não.
+
+Funções comuns em Array
+
+forEach - percorre o array. Util para processamento em cada dado
+
+filter - percorre o array e retorna um array com a condição indicada na função definida no parametro
+
+map - percorre o array e retorna um array modificado comas instruções da função definida no parametro
+
