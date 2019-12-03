@@ -1,0 +1,4 @@
+instanceOf - verifica a qual classe pertence o objeto.
+Polimorfismo - é o recurso que permite a sobreescrita do metodo filho.
+super() - deve ser usado dentro do construct para herdar.
+super.metodo() - podemos chamar um metodo do pai dentro do filho.
