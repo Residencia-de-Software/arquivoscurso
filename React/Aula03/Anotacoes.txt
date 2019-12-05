@@ -1,0 +1,45 @@
+SPA (Single Page Application) - Paginas que não são necessarias recarregar para atualizar seu conteudo.
+
+AJAX (Asynchronous Javascript and XML)
+
+Instalação do React
+
+yarn create create-react-app my-app
+
+ou
+
+npx create-react-app my-app
+
+Tipos de componentes do react
+
+Componentes de Classes - Componentes mais complexos que permitem interações pode haver funções 
+
+class App extends Component{
+  render(){ //medoto de renderização dos componentes
+    return
+  }
+}
+
+Componentes Funcionais - Componentes apenas de exibição não tem interação
+
+function App(){
+  return(
+    <div>
+      <p>Olá Mundo</p>
+    </div>
+  )
+}
+
+JSX - Javascript XML
+
+event.preventDefault() - Previne o reload da pagina ao clicar em submit
+
+Variavei State é padrão do react que guarda todas as variaveis de estado do projeto react
+
+constructor(props) {
+    super(props);
+    this.state = {
+      chave: "Valor"
+    };
+
+this.setState() - função para alterar os valores das variaveis de state

@@ -30,7 +30,7 @@ class Conta {
       console.log("Ah tá bom bonitão! Vai transferir sim.");
       this.imprimirSaldo();
     } else {
-      this.saldo -= valor;
+      this.sacar(valor);
       destinatario.depositar(valor);
     }
   }
