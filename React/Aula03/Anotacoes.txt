@@ -4,7 +4,7 @@ AJAX (Asynchronous Javascript and XML)
 
 Instalação do React
 
-yarn create create-react-app my-app
+yarn create react-app my-app
 
 ou
 

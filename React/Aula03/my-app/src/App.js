@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Button from "@material-ui/core/Button";
+import qualquer from "@material-ui/core/"
 
 class App extends Component {
   constructor(props) {
@@ -12,15 +14,19 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1>{this.state.chave}</h1>
-      </div>
+      <>
+        <div>
+          <Button variant="contained" color="primary">
+            Olá Mundo
+          </Button>
+          <h1>{this.state.chave}</h1>
+        </div>
+      </>
     );
   }
 }
 
 export class ListagemUsuario extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
