@@ -43,3 +43,7 @@ constructor(props) {
     };
 
 this.setState() - função para alterar os valores das variaveis de state
+
+props - são as propriedades dos componentes criados.
+
+

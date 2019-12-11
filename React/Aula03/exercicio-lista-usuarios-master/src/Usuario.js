@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import "./App.css";
+import { Button, Form, Container } from "react-bootstrap";
+import Tabela from "./components/Tabela";
+import Input from "./components/Input";
 
 //Componentes de Classe
 export default class CadastroUsuario extends Component {
@@ -32,53 +34,48 @@ export default class CadastroUsuario extends Component {
   render() {
     return (
       <>
-        <form onSubmit={this.cadastrarUsuario}>
-          <input
-            type="text"
-            placeholder="Nome"
-            value={this.state.nome}
-            onChange={evento => {
-              this.setState({ nome: evento.target.value });
-            }}
+        <Container>
+          <Form onSubmit={this.cadastrarUsuario}>
+            <Input
+              titulo="Nome"
+              tipo="text"
+              valor={this.state.nome}
+              alterarCampo={evento => {
+                this.setState({ nome: evento.target.value });
+              }}
+            />
+            <Input
+              titulo="E-mail"
+              tipo="email"
+              valor={this.state.email}
+              alterarCampo={evento => {
+                this.setState({ email: evento.target.value });
+              }}
+            />
+            <Input
+              titulo="Telefone"
+              tipo="tel"
+              valor={this.state.telefone}
+              alterarCampo={evento => {
+                this.setState({ telefone: evento.target.value });
+              }}
+            />
+            <Button type="submit" variant="primary">
+              Cadastrar
+            </Button>
+          </Form>
+          <Tabela
+            pessoas={this.state.pessoas}
+            removerPessoa={this.removerUsuario}
           />
-          <input
-            type="email"
-            placeholder="Email"
-            value={this.state.email}
-            onChange={evento => {
-              this.setState({ email: evento.target.value });
-            }}
-          />
-          <input
-            type="tel"
-            placeholder="Telefone"
-            value={this.state.telefone}
-            onChange={evento => {
-              this.setState({ telefone: evento.target.value });
-            }}
-          />
-          <input type="submit" />
-        </form>
-        <table>
-          {this.state.pessoas.map((pessoa, index) => (
-            <tr>
-              <td>{pessoa.nome}</td>
-              <td>{pessoa.telefone}</td>
-              <td>{pessoa.email}</td>
-              <td>
-                <button onClick={() => this.removerUsuario(index)}>
-                  Remover
-                </button>
-              </td>
-            </tr>
-          ))}
-        </table>
+        </Container>
       </>
     );
   }
 
   cadastrarUsuario = evento => {
     evento.preventDefault();
+    console.log(this.state.pessoas);
     this.setState({
       pessoas: [
         ...this.state.pessoas,

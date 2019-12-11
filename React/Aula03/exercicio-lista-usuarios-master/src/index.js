@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import CadastroUsuario from "./Usuario";
 import * as serviceWorker from "./serviceWorker";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(<CadastroUsuario />, document.getElementById("root"));
 
