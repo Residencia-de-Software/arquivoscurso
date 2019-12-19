@@ -1,0 +1,47 @@
+iniciar um novo projeto
+
+react-native init <nome_projeto>
+
+react-native start
+
+react-native run-android
+
+componentDidMount
+
+shouldComponentUpdate - defini se sera renderizado quando houver um setState.
+
+React Navigation - 
+
+instalar as seguintes dependencias
+
+react-navigation
+
+react-navigation-stack
+
+react-native-gesture-handler
+
+importar
+
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+
+implementar
+
+const AppNavigation = createStackNavigator({
+  Pag1: {screen: Pag1Screen},
+  Pag2: {screen: Pag2Screen},
+  Pag3: {screen: Pag3Screen},
+});
+
+const AppContainer = createAppContainer(AppNavigation);
+
+export default class App extends Component {
+  render() {
+    return <AppContainer />;
+  }
+
+Para navegar entre paginas utilize
+
+this.props.navigation.navigate(page);
+
+

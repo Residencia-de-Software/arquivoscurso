@@ -1,0 +1,47 @@
+react-native-navigator - navegar entre as paginas do app
+
+https://docs.google.com/presentation/d/12z_tuZ0s2vQb-_XzumDhbs6xPJtsopRWkGZ9qfh2Ks4/edit?usp=sharing
+
+Navegação entre Páginas
+
+Instalar: 
+
+yarn add react-navigation
+
+yarn add react-native-gesture-handler
+
+yarn add react-navigation-stack - Permite a transição de telas no seu app de modo que 
+cada tela é posta no topo de uma pilha.
+
+StackNavigator para navegarmos entre telas por botões dentro da tela.
+
+
+
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+
+const MainNavigator = createStackNavigator({
+  Home: {screen: HomeScreen},
+  Profile: {screen: ProfileScreen},
+});
+
+const App = createAppContainer(MainNavigator);
+
+export default App;
+
+Storage Assincrono
+
+import {AsyncStorage} from 'react-native';
+
+static getItem(key: string, [callback]: ?(error: ?Error, result: ?string) => void)
+
+static setItem(key: string, value: string, [callback]: ?(error: ?Error) => void)
+
+static removeItem(key: string, [callback]: ?(error: ?Error) => void)
+
+Axios:
+
+const api = axios.create({
+baseURL:"http://endereçoIp"})
+
+
