@@ -8,7 +8,7 @@ react-native run-android
 
 componentDidMount
 
-shouldComponentUpdate - defini se sera renderizado quando houver um setState.
+shouldComponentUpdate - define se sera renderizado quando houver um setState.
 
 React Navigation - 
 
@@ -40,8 +40,32 @@ export default class App extends Component {
     return <AppContainer />;
   }
 
+
 Para navegar entre paginas utilize
 
 this.props.navigation.navigate(page);
 
 
+Hooks -
+
+
+useState - Cria states em componentes statelees
+
+const [count, setCount] = useState(0);
+
+count é o valor inicial de count
+
+setCount é uma funcao para atualizar o valor de count.
+
+useEffects - Efeito colateral após a renderização.
+
+useEffects(()=> <função>,[<variaveis>])
+
+executa a funçao toda vez que as variaveis do array forem alteradas.
+
+https://pt-br.reactjs.org/docs/hooks-overview.html
+
+
+Redux - 
+
+Arquitetura Flux - 

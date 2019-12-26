@@ -1,9 +1,7 @@
-export const PersonSchema = {
-  name: 'Person',
+export const Produtos = {
+  name: 'Produto',
   properties: {
-    name: 'string',
-    birthday: 'date',
-    cars: 'Car[]',
-    picture: 'data?', // optional property
+    nome: 'string',
+    preco: 'float',
   },
 };

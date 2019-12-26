@@ -1,0 +1,11 @@
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/bin/Debug/netcoreapp3.1/Projeto01
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/bin/Debug/netcoreapp3.1/Projeto01.deps.json
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/bin/Debug/netcoreapp3.1/Projeto01.runtimeconfig.json
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/bin/Debug/netcoreapp3.1/Projeto01.runtimeconfig.dev.json
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/bin/Debug/netcoreapp3.1/Projeto01.dll
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/bin/Debug/netcoreapp3.1/Projeto01.pdb
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/obj/Debug/netcoreapp3.1/Projeto01.csprojAssemblyReference.cache
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/obj/Debug/netcoreapp3.1/Projeto01.AssemblyInfoInputs.cache
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/obj/Debug/netcoreapp3.1/Projeto01.AssemblyInfo.cs
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/obj/Debug/netcoreapp3.1/Projeto01.dll
+/home/rodolfo/Área de Trabalho/Residencia/c#/Projeto01/obj/Debug/netcoreapp3.1/Projeto01.pdb
